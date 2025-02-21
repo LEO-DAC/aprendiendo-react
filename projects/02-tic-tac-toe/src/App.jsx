@@ -6,13 +6,27 @@ const TURNS = {
   X: 'X',
   O: 'O'
 }
+const WINNING_COMBINATIONS = [
+  // filas
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  // columnas
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  // diagonales
+  [0, 4, 8],
+  [2, 4, 6]
+]
+// pendiente crear algoritmo o funcion para determinar si es hay un ganador
 
 const Square = ({ children, isSelected, updateBoard, index}) => {
 
   const className = `square ${isSelected ? 'is-selected' : ''}`
 
   const handleClick = () => {
-    updateBoard()
+    updateBoard(index)
   }
 
   return(
@@ -28,12 +42,25 @@ function App() {
   // null es que no hay ganador, false es que ya hay ganador
   const [winner, setWinner] = useState(null)
   
-  const updateBoard = (index) => {
+ const checkWinner = (BoardToCheck) => {
+    // revisamos todas las combinaciones ganadoras
+   for (const combination of WINNING_COMBINATIONS) {
+     const [a, b, c] = combination
+     if (BoardToCheck[a] && 
+         BoardToCheck[a] === BoardToCheck[b] && 
+         BoardToCheck[a] === BoardToCheck[c]) {
+       return BoardToCheck[a]
+     }
+     
+  }     
+    return null
 
+}
+
+  const updateBoard = (index) => {
     // no actualizamos esta posición 
     // si ya tiene algo
-
-    if (board[index]) return
+    if (board[index] || winner) return
 
     //actualizar el tablero
       const newBoard = [...board]
@@ -42,6 +69,12 @@ function App() {
       //cambiar el turno
       const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X
       setTurn(newTurn)
+      //verificar si hay un ganador
+      const NewWinner = checkWinner(newBoard)
+      if (NewWinner) {
+        alert(`Ganador: ${NewWinner}`)
+        setWinner(NewWinner)
+      }
   }
 
   return(
