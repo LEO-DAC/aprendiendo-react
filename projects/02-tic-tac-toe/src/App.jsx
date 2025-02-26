@@ -36,6 +36,11 @@ const updateBoard = (index) => {
     // TODO check if game is over
 }
 
+const saveGame = (saveBoard) => {
+// enviar el tablero a guardar en el local storage 
+  localStorage.setItem('board', JSON.stringify(saveBoard))
+
+}
 
 // resetear el juego
 const resetGame = () => {
