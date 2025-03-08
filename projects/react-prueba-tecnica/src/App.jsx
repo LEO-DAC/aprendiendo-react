@@ -1,35 +1,38 @@
 import { useState,useEffect } from 'react';
-//const API_CAT = 'https://cataas.com/cat/says/hello';
-const FACTS_CAT = 'https://catfact.ninja/fact';
-
+export const FACTS_CAT = 'https://catfact.ninja/fact';
+export const API_CAT = 'https://cataas.com/cat/says/';
+import './style.css';
 export function App(){
     const [consulta,setConsulta] = useState(null);
     const [imageURL,setImageURL] = useState('');
+    const [varHandleSubmit,setVarHandleSubmit] = useState(0);
     useEffect(()=>{
-        console.log("dentro de useEffect 1 ")
-    fetch(FACTS_CAT)
+        fetch(FACTS_CAT)
         .then(response  => response.json())
         .then(data => {
             const cons = data.fact
             setConsulta(cons)
-            console.log("cons = "+ cons)
             const concatWord =  cons.split(' ',3).join(' ')
-            console.log("concatWord = "+ concatWord)
                 // Set the direct URL to the image
-                setImageURL(`https://cataas.com/cat/says/${concatWord}`);
+                setImageURL( API_CAT+concatWord );
             })
             .catch(error => {
                 console.error("Error fetching data:", error);
-            });
+          });
 
-    },[])
+    },[varHandleSubmit])
 
+  function changerCat(){
+    setVarHandleSubmit(varHandleSubmit+1)
+  }
 
     return (
         <div>
             <h1>App de gatitos</h1>
+            <button onClick={ changerCat }>Change Cat</button>  
             <h3>{ consulta!=null ? consulta.split(' ',3).join(' ') :'' }</h3>
             { imageURL && <img src={imageURL} alt="imagen de gato" />}
+              
 
         </div>
     );
