@@ -10,11 +10,29 @@ function App() {
   const hasMovies = movies.length > 0 ? true : false; 
 
   const [WordToSearchFor, setWordToSearchFor] = useState('');
- 
+  const [SearchMovies, setSearchMovies] = useState(movies);
 function FilterSearch(e) {
+  setSearchMovies([]);
   e.preventDefault();
   console.log('Buscando:', WordToSearchFor);
+  var moviesFilter = [];
+  for (let i=0; i< movies.length; i++ ){
+    
+    if (movies[i].Title.includes(WordToSearchFor)){
+        moviesFilter.push(movies[i]);
+        setSearchMovies(moviesFilter);    
+        console.log("Coincidencia: "+movies[i].Title);
+    }
+  }
+
+  console.log( "registros encontrados: "+SearchMovies.length);
 }
+
+function handleChange(e) {
+  setWordToSearchFor(e.target.value);
+  console.log(WordToSearchFor);
+}
+
 
   return (
   <div class ="page">
@@ -22,8 +40,8 @@ function FilterSearch(e) {
     <header>
       <h1>Buscador de Películas</h1>
       <form action="">
-            <input type="text" value={WordToSearchFor} placeholder='Avenguers, star Wars, Matrix' />
-            <button type="submit" handleClick={FilterSearch} >Buscar</button>
+            <input type="text"  onChange={handleChange} placeholder='Avenguers, star Wars, Matrix' />
+            <button type="submit" onClick={FilterSearch}  >Buscar</button>
       </form>
     </header>
 
@@ -42,7 +60,7 @@ function FilterSearch(e) {
           {
             hasMovies ?
 
-            movies.map( movie => (
+            SearchMovies.map( movie => (
               <tr key={movie.imdbID}>
                 <td>{movie.Title}</td>
                 <td>{movie.Year}</td>
