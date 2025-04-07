@@ -5,28 +5,28 @@ import './App.css'
 
 function App() {
   
+
+
+
   //const movies = withoutResponse.Response == "False" ? [] : responseMovies.Search;
   const movies = responseMovies.Search;
-  const hasMovies = movies.length > 0 ? true : false; 
 
   const [WordToSearchFor, setWordToSearchFor] = useState('');
-  const [SearchMovies, setSearchMovies] = useState(movies);
-function FilterSearch(e) {
-  setSearchMovies([]);
-  e.preventDefault();
-  console.log('Buscando:', WordToSearchFor);
-  var moviesFilter = [];
-  for (let i=0; i< movies.length; i++ ){
-    
-    if (movies[i].Title.includes(WordToSearchFor)){
-        moviesFilter.push(movies[i]);
-        setSearchMovies(moviesFilter);    
-        console.log("Coincidencia: "+movies[i].Title);
-    }
-  }
+  const [SearchMovies, setSearchMovies] = useState([]);
+  const [hasMovies, setHasMovies] = useState(false);
+  function FilterSearch(e) {
+    setSearchMovies([]);
+    e.preventDefault();
+    console.log('Buscando:', WordToSearchFor);
 
-  console.log( "registros encontrados: "+SearchMovies.length);
-}
+    fetch(`http://www.omdbapi.com/?apikey=8ed34103&s=${WordToSearchFor}`)
+     .then(response => response.json())
+     .then(data =>  setSearchMovies(data.Search))
+     .catch(error => console.log(error));
+    
+     setHasMovies(searchMovies.length > 0 ? setHasMovies(true) : setHasMovies(false)); 
+
+  }
 
 function handleChange(e) {
   setWordToSearchFor(e.target.value);
@@ -35,7 +35,7 @@ function handleChange(e) {
 
 
   return (
-  <div class ="page">
+  <div className ="page">
 
     <header>
       <h1>Buscador de Películas</h1>
@@ -46,7 +46,7 @@ function handleChange(e) {
     </header>
 
     <main>
-      aqui van a mostrarse los resultados
+      <h3>Registros encontrados: {SearchMovies.length} </h3>
 
       <table>
         <thead>
