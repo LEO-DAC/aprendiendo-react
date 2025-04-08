@@ -1,0 +1,141 @@
+
+    [
+      
+          {"time": "8:00am", "presionSistolica": 130, "presionDiastolica": 82,"date": "14/11/2024"},
+          {"time": "06:00pm", "presionSistolica": 143, "presionDiastolica": 72 ,"date": "14/11/2024"},
+            
+          {"time": "7am", "presionSistolica": 128, "presionDiastolica": 72,"date": "15/11/2024"},
+          {"time": "6pm", "presionSistolica": 161, "presionDiastolica": 68 ,"date": "15/11/2024"},
+          {"time": "10pm", "presionSistolica": 121, "presionDiastolica": 75, "date": "15/11/2024"},
+                
+          {"time": "6am", "presionSistolica": 121, "presionDiastolica": 75,"date": "16/11/2024"},
+          {"time": "8pm", "presionSistolica": 112, "presionDiastolica": 67 ,"date": "16/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 128, "presionDiastolica": 72,"date": "17/11/2024"},
+          {"time": "8pm", "presionSistolica": 142, "presionDiastolica": 70 ,"date": "17/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 137, "presionDiastolica": 7,"date": "18/11/2024"},         
+          {"time": "8am", "presionSistolica": 127, "presionDiastolica": 74,"date": "19/11/2024"},
+          {"time": "6pm", "presionSistolica": 138, "presionDiastolica": 81 ,"date": "19/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 115, "presionDiastolica": 75,"date": "20/11/2024"},
+          {"time": "6pm", "presionSistolica": 136, "presionDiastolica": 81 ,"date": "20/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 127, "presionDiastolica": 84,"date": "21/11/2024"},
+          {"time": "6pm", "presionSistolica": 143, "presionDiastolica": 81 ,"date": "21/11/2024"},
+                
+          {"time": "6am", "presionSistolica": 129, "presionDiastolica": 73,"date": "22/11/2024"},
+          {"time": "8am", "presionSistolica": 135, "presionDiastolica": 82 ,"date": "22/11/2024"},
+          {"time": "6pm", "presionSistolica": 136, "presionDiastolica": 77},
+                
+          {"time": "8am", "presionSistolica": 116, "presionDiastolica": 75,"date": "23/11/2024"},
+          {"time": "6pm", "presionSistolica": 134, "presionDiastolica": 78 ,"date": "23/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 130, "presionDiastolica": 74,"date": "24/11/2024"},
+          {"time": "6pm", "presionSistolica": 130, "presionDiastolica": 80 ,"date": "24/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 118, "presionDiastolica": 83,"date": "25/11/2024"},
+          {"time": "6pm", "presionSistolica": 137, "presionDiastolica": 80 ,"date": "25/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 132, "presionDiastolica": 80,"date": "26/11/2024"},
+          {"time": "6pm", "presionSistolica": 147, "presionDiastolica": 84 ,"date": "26/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 136, "presionDiastolica": 80,"date": "27/11/2024"},
+          {"time": "6pm", "presionSistolica": 138, "presionDiastolica": 83 ,"date": "27/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 130, "presionDiastolica": 74,"date": "28/11/2024"},
+          {"time": "6pm", "presionSistolica": 129, "presionDiastolica": 80 ,"date": "28/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 122, "presionDiastolica": 83,"date": "29/11/2024"},
+          {"time": "6pm", "presionSistolica": 150, "presionDiastolica": 85 ,"date": "29/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 139, "presionDiastolica": 80,"date": "30/11/2024"},
+          {"time": "6pm", "presionSistolica": 145, "presionDiastolica": 88 ,"date": "30/11/2024"},
+                
+          {"time": "8am", "presionSistolica": 150, "presionDiastolica": 84,"date": "1/12/2024"},
+          {"time": "6pm", "presionSistolica": 141, "presionDiastolica": 95 ,"date": "1/12/2024"},
+                
+          {"time": "6am", "presionSistolica": 132, "presionDiastolica": 87,"date": "2/12/2024"},
+          {"time": "8amspués correr", "presionSistolica": 119, "presionDiastolica": 83 ,"date": "2 /12/2024"},
+          {"time": "6pm", "presionSistolica": 135, "presionDiastolica": 89, "date": "2/12/2024"},
+                
+          {"time": "8amspues entrenar", "presionSistolica": 116, "presionDiastolica": 80,"date": "3 /12/2024"},
+          {"time": "6pm", "presionSistolica": 121, "presionDiastolica": 85 ,"date": "3/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 122, "presionDiastolica": 80,"date": "4/12/2024"},
+          {"time": "6pm", "presionSistolica": 133, "presionDiastolica": 85 ,"date": "4/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 132, "presionDiastolica": 77,"date": "5/12/2024"},
+          {"time": "6pm", "presionSistolica": 130, "presionDiastolica": 83 ,"date": "5/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 127, "presionDiastolica": 77,"date": "6/12/2024"},
+          {"time": "6pm", "presionSistolica": 131, "presionDiastolica": 86 ,"date": "6/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 126, "presionDiastolica": 76,"date": "7/12/2024"},
+          {"time": "6pm", "presionSistolica": 135, "presionDiastolica": 77 ,"date": "7/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 130, "presionDiastolica": 86,"date": "8/12/2024"},
+          {"time": "6pm", "presionSistolica": 135, "presionDiastolica": 86 ,"date": "8/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 123, "presionDiastolica": 83,"date": "9/12/2024"},
+          {"time": "6pm", "presionSistolica": 138, "presionDiastolica": 86 ,"date": "9/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 123, "presionDiastolica": 75,"date": "10/12/2024"},
+          {"time": "6 pm", "presionSistolica": 139, "presionDiastolica": 76 ,"date": "10/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 126, "presionDiastolica": 78,"date": "11/12/2024"},
+          {"time": "6pm", "presionSistolica": 150, "presionDiastolica": 86 ,"date": "11/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 127, "presionDiastolica": 76,"date": "12/12/2024"},
+          {"time": "6pm", "presionSistolica": 145, "presionDiastolica": 86 ,"date": "12/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 124, "presionDiastolica": 70,"date": "13/12/2024"},
+          {"time": "6pm", "presionSistolica": 126, "presionDiastolica": 72 ,"date": "13/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 126, "presionDiastolica": 71,"date": "14/12/2024"},
+          {"time": "6pm", "presionSistolica": 118, "presionDiastolica": 69 ,"date": "14/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 127, "presionDiastolica": 76,"date": "15/12/2024"},
+          {"time": "11pm", "presionSistolica": 144, "presionDiastolica": 80 ,"date": "15/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 130, "presionDiastolica": 80,"date": "16/12/2024"},
+          {"time": "6pm", "presionSistolica": 150, "presionDiastolica": 71 ,"date": "16/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 116, "presionDiastolica": 60, "lpm": 60,"date": "17/12/2024"},
+          {"time": "6pm", "presionSistolica": 136, "presionDiastolica": 71, "lpm": 70 ,"date": "17/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 112, "presionDiastolica": 70, "lpm": 60,"date": "18/12/2024"},
+          {"time": "6pm", "presionSistolica": 134, "presionDiastolica": 70, "lpm": 68 ,"date": "18/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 120, "presionDiastolica": 74, "lpm": 59,"date": "19/12/2024"},
+          {"time": "6pm", "presionSistolica": 126, "presionDiastolica": 70, "lpm": 60 ,"date": "19/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 128, "presionDiastolica": 71, "lpm": 52,"date": "20/12/2024"},
+          {"time": "6pm", "presionSistolica": 144, "presionDiastolica": 79, "lpm": 66, "nota": "me bañé con ag,ua fria" ,"date": "20 /12/2024"},
+                
+          {"time": "9am", "presionSistolica": 126, "presionDiastolica": 80, "lpm": 59,"date": "21/12/2024"},
+          {"time": "9:01am", "presionSistolica": 124, "presionDiastolica": 74, "lpm": 55 ,"date": "21/12/2024"},
+          {"time": "3pm", "presionSistolica": 123, "presionDiastolica": 73, "lpm": 61},
+                
+          {"time": "8am", "presionSistolica": 142, "presionDiastolica": 78, "lpm": 47,"date": "22/12/2024"},
+          {"time": "6pm", "presionSistolica": 131, "presionDiastolica": 71, "lpm": 58 ,"date": "22/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 132, "presionDiastolica": 77, "lpm": 56,"date": "23/12/2024"},
+          {"time": "6pm", "presionSistolica": 132, "presionDiastolica": 66, "lpm": 63 ,"date": "23/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 122, "presionDiastolica": 74, "lpm": 62,"date": "24/12/2024"},
+          {"time": "6pm", "presionSistolica": 116, "presionDiastolica": 67, "lpm": 53 ,"date": "24/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 125, "presionDiastolica": 70, "lpm": 51,"date": "25/12/2024"},
+          {"time": "6pm", "presionSistolica": 122, "presionDiastolica": 68, "lpm": 68 ,"date": "25/12/2024"},
+                
+          {"time": null, "presionSistolica": 124, "presionDiastolica": 74, "lpm": 57,"date": "27/12/2024"},
+          {"time": "6pm", "presionSistolica": 150, "presionDiastolica": 94 ,"date": "27/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 125, "presionDiastolica": 80, "lpm": 75,"date": "29/12/2024"},
+          {"time": "6pm", "presionSistolica": 123, "presionDiastolica": 71, "lpm": 80 ,"date": "29/12/2024"},
+                
+          {"time": "8am", "presionSistolica": 109, "presionDiastolica": 75, "lpm": 56,"date": "30/12/2024"},
+          {"time": "6pm", "presionSistolica": 132, "presionDiastolica": 65, "lpm": 63 ,"date": "30/12/2024"}
+         
+    ]

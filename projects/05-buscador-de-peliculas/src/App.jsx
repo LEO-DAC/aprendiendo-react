@@ -1,30 +1,46 @@
-import responseMovies from './mocks/responseMovies.json'
-import withoutResponse from './mocks/withoutResponse.json'
+//import responseMovies from './mocks/responseMovies.json'
+//import withoutResponse from './mocks/withoutResponse.json'
 import { useState } from 'react'
 import './App.css'
 
 function App() {
-  
-
-
 
   //const movies = withoutResponse.Response == "False" ? [] : responseMovies.Search;
-  const movies = responseMovies.Search;
+  //const movies = responseMovies.Search;
 
   const [WordToSearchFor, setWordToSearchFor] = useState('');
   const [SearchMovies, setSearchMovies] = useState([]);
-  const [hasMovies, setHasMovies] = useState(false);
+  const [hasMovies, setHasMovies] = useState(true);
+
   function FilterSearch(e) {
     setSearchMovies([]);
     e.preventDefault();
     console.log('Buscando:', WordToSearchFor);
 
     fetch(`http://www.omdbapi.com/?apikey=8ed34103&s=${WordToSearchFor}`)
-     .then(response => response.json())
-     .then(data =>  setSearchMovies(data.Search))
-     .catch(error => console.log(error));
+     .then(response =>{ 
+        if(response.Response == "False") {
+          setHasMovies(false);
+          console.log('No se encontraron resultados');
+          console.log(response.Response);
+        }else{
+          console.log('Resultados encontrados');
+          console.log(response.Search);
+          setSearchMovies(response.Response);
+          setHasMovies(true);
+        }
+      }
+        )
+     /*.then(data =>  {setSearchMovies(data.Search)
+        console.log('Resultados encontrados');
+        console.log(data.Search);
+        setHasMovies(true);
+      }
+     )
+     .catch(error => console.log(error)
     
-     setHasMovies(searchMovies.length > 0 ? setHasMovies(true) : setHasMovies(false)); 
+    );*/
+    
 
   }
 
@@ -46,7 +62,7 @@ function handleChange(e) {
     </header>
 
     <main>
-      <h3>Registros encontrados: {SearchMovies.length} </h3>
+      <h3>Registros encontrados: { SearchMovies ?  SearchMovies.length : 0} </h3>
 
       <table>
         <thead>
@@ -58,7 +74,7 @@ function handleChange(e) {
         </thead>
         <tbody>
           {
-            hasMovies ?
+            hasMovies & SearchMovies ?
 
             SearchMovies.map( movie => (
               <tr key={movie.imdbID}>
